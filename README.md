@@ -5,6 +5,9 @@ Azure web site http://clothy.azurewebsites.net/
 
 Author: Matija Bertović
 
+Admin mail: admin@gmail.com
+Admin pass: Asd.123
+
 Napomene: Sve u vezi dodavanja i pregledavanja radi normalno, jedino nakon puno muke svejedno nisam uspio popraviti Cart.
           Kada stisnem "Add to cart" se ne doda u košaricu, isto tako dođe do greške kad stisnem "Make order". Nisam zabranio
           napraviti narudžbu ako nema ničega u košarici kako bih mogao to testirati. Kada unesem podatke za dostavu, javi se
