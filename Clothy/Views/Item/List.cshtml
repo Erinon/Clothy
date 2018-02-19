@@ -1,0 +1,13 @@
+﻿@model Clothy.Models.ClothyViewModels.ListItemViewModel
+
+<div>
+    @foreach (var itemModel in Model.Models)
+    {
+        @Html.Partial("_ShowItemPartial", itemModel);
+
+    }
+</div>
+
+<div style="margin-top: 20px">
+    <a asp-controller="Item" asp-action="Manage">Return</a>
+</div>

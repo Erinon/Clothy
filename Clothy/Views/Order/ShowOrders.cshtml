@@ -1,0 +1,15 @@
+﻿@model Clothy.Models.ClothyViewModels.OrderListViewModel
+
+<h4>Orders</h4>
+
+<div>
+    @foreach (var order in Model.Models)
+    {
+        @Html.Partial("_ShowOrderPartial", order);
+
+    }
+</div>
+
+<div>
+    <a asp-controller="Order" asp-action="Manage">Return</a>
+</div>

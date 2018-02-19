@@ -1,0 +1,6 @@
+﻿@model Clothy.Models.ClothyViewModels.CategoryListViewModel
+
+@foreach (var catModel in Model.Models)
+{
+    <option value="@catModel.Id">@catModel.Name</option>
+}

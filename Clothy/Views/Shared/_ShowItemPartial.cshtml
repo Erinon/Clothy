@@ -1,0 +1,16 @@
+﻿@model Clothy.Models.ClothyViewModels.ItemViewModel
+
+<div style="border: 1px solid black; width: 202px; float: left; margin: 5px 5px 5px 5px">
+    <img style="width: 200px; height: 200px" src="@Model.Picture" />
+    <div><strong>@Model.Name</strong></div>
+    <div>@Model.Price €</div>
+    <div>
+        <a asp-controller="Item" asp-action="Preview" asp-route-itemId="@Model.Id">Details</a>
+    </div>
+    @if (Model.IsAdmin)
+    {
+        <a asp-controller="Item" asp-action="Edit" asp-route-itemId="@Model.Id">Edit</a>
+        <span> | </span>
+        <a asp-controller="Item" asp-action="Remove" asp-route-itemId="@Model.Id">Remove</a>
+    }
+</div>

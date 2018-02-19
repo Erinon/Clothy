@@ -1,0 +1,9 @@
+﻿@model Clothy.Models.ClothyViewModels.CartItemViewModel
+
+<div>
+    <span style="margin-right: 10px"><strong>@Model.Name</strong></span>
+    <span style="margin-right: 10px">@Model.Price €</span>
+    <span>
+        <a asp-controller="Cart" asp-action="RemoveFromCart" asp-route-itemId="@Model.Id">Remove</a>
+    </span>
+</div>

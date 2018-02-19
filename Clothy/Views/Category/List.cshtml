@@ -1,0 +1,13 @@
+﻿@model Clothy.Models.ClothyViewModels.CategoryListViewModel
+
+<div>
+    @foreach (var catModel in Model.Models)
+    {
+        @Html.Partial("_ShowCategoryPartial", catModel);
+
+    }
+</div>
+
+<div style="margin-top: 20px">
+    <a asp-controller="Category" asp-action="Manage">Return</a>
+</div>

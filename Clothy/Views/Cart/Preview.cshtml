@@ -1,0 +1,15 @@
+﻿@model Clothy.Models.ClothyViewModels.CartViewModel
+
+<h4>Cart</h4>
+
+<div>
+    @foreach (var item in Model.Models)
+    {
+        @Html.Partial("_CartItemPartial", item);
+
+    }
+</div>
+
+<div>
+    <a asp-controller="Order" asp-action="MakeOrder">Make order</a>
+</div>
